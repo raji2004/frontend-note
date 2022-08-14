@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>events'</title> 
+
+        <style>
+            .color{
+                background-color: blue;
+                width: 500px;
+                height: 200px;
+            }
+           .gren{
+               background: green;
+           }
+        </style>
+        <script>
+            // document.addEventListener('DOMContentLoaded', addtolog);
+            // function addtolog(){
+            //     console.log('dom content loaded')
+            //    const c = document.querySelector('.color');
+            //     c.innerHTML += '<h1> hello :D</h1>';
+            // }
+            /*------------- difference between load events and DOMContentLoaded--------------------
+                   the load event waits for external stylesheet or images 
+                   to be loaded b4 firing rather than DOMContentLoaded
+                   load event listners are ussually attached to the window
+            */
+          window.addEventListener('load',img)
+          function img(){
+              const m = document.getElementById('myimg')
+            //   myimg.style.height = '400px'
+              myimg.style.borderRadius = '90%'
+              console.log('hieght: ' + myimg.offsetHeight + ' width: '+ myimg.offsetWidth)
+              
+          }
+        </script>
+    </head>
+    
+    <body>
+        <img  id = 'myimg'src="joker.jpg" alt="mytestimage">
+        <div class="color">
+
+        </div><br>
+        <button>click here</button>
+        <div id="col">
+            <h1>i am a h1 tag</h1>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <div id="div2">
+             <a href="http://github.io">thi will take u to github</a>
+             <form id="my form" method="post">
+                 <input id= 'myint'/>
+                 <button type="submit">clickhere</button>
+             </form>
+        </div>
+        <div id="div3">
+            <p></p>
+            <textarea></textarea>
+            <button type="submit">send</button>
+        </div>
+    </body>
+    <script src="introductiontoevents.js"></script>
+</html>

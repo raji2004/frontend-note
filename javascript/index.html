@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dummy {
+      color: red;
+    }
+    
+    .dummy span {
+      color: orange;
+    }
+    
+    .purple {
+      background-color: purple;
+      height: 100px;
+      width: 100px;
+    }
+    
+    .foo {
+      border-radius: 50%;
+    }
+    
+  </style>
+<body> 
+  <div>
+    I should not be colored green >:(
+  </div>
+  <div id="test" class="dummy purple">
+    Some <span>dumm</span> text 
+  </div>
+  <div class="dummy">
+    Even more <span>dummy</span> text :D !
+  </div>
+  <div id="footer" class="purple">
+  </div>
+  
+  <div id="created">
+    
+  </div>
+  <div>dummy <span>right</span> text</div>
+   <div>
+
+   </div>
+    <script src="introductiontodom.js">
+         const dummydiv = document.querySelector('.dummy span');
+           //console.log(dummydiv.parentNode)
+          dummydiv.parentNode.style.backgroundcolor = "teal";
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+img{
+    width: 300px;
+    height: 300px;
+}
+
+body{
+    background-color: lightblue;
+}
+header ul{
+    background-color: orange;
+}
+
+section > div >h4{
+    color: green
+}
